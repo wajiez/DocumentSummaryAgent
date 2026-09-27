@@ -129,6 +129,9 @@ g.add_conditional_edges(
     }
 )
 
+memory = MemorySaver()
+g = g.compile(checkpointer=memory)
+
 def run():
     # 会话配置
     config = {"configurable": {"thread_id": "user_12345"}}
@@ -166,6 +169,4 @@ def run():
     # })
 
 if __name__ == "__main__":
-    memory = MemorySaver()
-    g = g.compile(checkpointer=memory)
     run()

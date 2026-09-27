@@ -16,7 +16,7 @@ def map_summarize(state: AgentState): #这个节点会被并发执行多次，�
         return {"map_results": []}
 
     redis_key = f"doc_chunks:{document_id}"
-    chunks_json = redis_client.get(redis_key)
+    chunks_json = redis_client.get(redis_key) # 取 chunks json
     if not chunks_json:
         print(f"❌ 错误：Redis 中未找到文档块 (Key: {redis_key})")
         return {"map_results": ["错误：未找到文档内容"]}

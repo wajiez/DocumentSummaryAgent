@@ -1,0 +1,81 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "long_bench-pro",
+  "dataset_size": 523432223,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/caskcsg/LongBench-Pro@e3f4410bcfa4f3667428f1fbc0cd80ef3eac6934/longbench_pro.json": {
+      "num_bytes": 531535940,
+      "checksum": null
+    }
+  },
+  "download_size": 531535940,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "context": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "language": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "token_length": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "primary_task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "secondary_task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "contextual_requirement": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question_nonthinking": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question_thinking": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "difficulty": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1054968163,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 523432223,
+      "num_examples": 1500,
+      "dataset_name": "long_bench-pro"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

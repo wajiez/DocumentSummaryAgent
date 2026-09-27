@@ -33,8 +33,10 @@ class AgentState(TypedDict):
 
     # error
     error: Optional[str]
-    # circuit
-    # if_circuit: bool
+
+    # =========== test ===========
+    raw_context: Optional[str]
+    redis_key: Optional[str]
 
 def state_schema() -> dict[str, Any]:
     """导出字段名 → 注解，方便调试时打印状态结构，也方便后续做校验。"""

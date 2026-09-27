@@ -19,6 +19,12 @@ class IntentClassification(BaseModel):
     )
 
 def classify_intent(state:AgentState):
+    # ========= test ===========
+    if state.get("raw_context"):
+        return {
+            "next_node": "parse_node"
+        }
+    
     user_messages = state["messages"][-1].content # 用户最新输入
 
     # 解析文件路径
